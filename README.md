@@ -95,39 +95,7 @@ Depuis un navigateur web :
 
 ---
 
-## 📸 3. Capture d’images par script
-
-Exemple de script Python permettant de récupérer une image :
-
-```python
-import requests
-from datetime import datetime
-
-OCTOPI_IP = "______" #ajouter votre adresse IP ici
-
-def capture_octopi_image url=f"http://{OCTOPI_IP}/webcam/?action=snapshot", output_file=None):
-    if output_file is None:
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        output_file = "avant.jpg" if etat == "avant" else "apres.jpg"
-
-    try:
-        print("Connexion à la caméra...")
-        response = requests.get(url, timeout=5)
-
-        if response.status_code == 200:
-            with open(output_file, "wb") as f:
-                f.write(response.content)
-                print(f"Image enregistrée : {output_file}")
-        else:
-            print(f"Erreur HTTP : {response.status_code}")
-
-    except requests.exceptions.RequestException as e:
-        print(f"Erreur de connexion : {e}")
-```
-
----
-
-## 🌿 4. Application : Détection de lentilles d’eau
+## 🌿 3. Application : Détection de lentilles d’eau
 
 Les images capturées peuvent être utilisées pour :
 
