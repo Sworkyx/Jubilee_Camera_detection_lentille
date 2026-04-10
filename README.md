@@ -134,6 +134,7 @@ Les images capturées peuvent être utilisées pour :
 
 ## 📎 Ressources
 
+* Jubilee : [https://github.com/leosabatie-eng/science-jubilee](https://github.com/leosabatie-eng/science-jubilee)
 * OctoPi : [https://octoprint.org/download/](https://octoprint.org/download/)
 * Dépôt utilisé : [https://github.com/Alienor134/OctoPi_timelapse](https://github.com/Alienor134/OctoPi_timelapse)
 * Documentation Raspberry Pi Camera : [https://www.raspberrypi.com/documentation/](https://www.raspberrypi.com/documentation/)
